@@ -20,14 +20,14 @@ module.exports = {
     },
     port: 3000,
     open: true,
-    hot: true,
     compress: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    hot: true,
+    liveReload: false
   },
   module: {
     rules: [
       {
-        // test: /\.scss$/,
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
